@@ -11,6 +11,10 @@ https://www.virtualbox.org/wiki/Downloads
 Download "Rocky Linux version 8" from the following web page \
 https://rockylinux.org/download/
 
+Alternatively you can also use CentOS or RHEL \
+https://www.centos.org/download/ \
+https://developers.redhat.com/products/rhel/download
+
 
 ## Step 3 - Create a new VM in VMBox
 Note : This will be done as part of the demo
