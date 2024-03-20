@@ -31,6 +31,17 @@ Read a file and output it to the CLI
 cat file1.txt
 ```
 
+### Command : grep
+Filter test using patters/regular expressions
+```
+# Examples
+grep root /etc/passwd
+cat /etc/passwd | grep ftp
+cat /etc/passwd | grep -i Ftp               # i --> ignore case
+cat /etc/passwd | grep ftp -A5              # show 5 lines after the match    
+cat /etc/passwd | grep ftp -B5              # show 5 lines before the match    
+```
+
 ### Command : env
 Print enviornrment varibales
 ```
