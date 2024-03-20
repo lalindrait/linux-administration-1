@@ -32,7 +32,7 @@ cat file1.txt
 ```
 
 ### Command : grep
-Filter test using patters/regular expressions
+Filter text using patters/regular expressions
 ```
 # Examples
 grep root /etc/passwd
