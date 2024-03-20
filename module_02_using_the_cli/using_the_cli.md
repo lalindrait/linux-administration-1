@@ -41,26 +41,6 @@ hostname --help
 ```
 
 
-## Commands to learn & practice
-```
-### Basic Linux Commands
-source
-cat
-man
-echo
-env
-ls
-cd
-pwd
-exit
-ssh
-
-### Commands to find information about the system
-
-```
-
-
-
 ## Command  Guide - Basic Linux Commands
 
 ### Command : source
@@ -93,8 +73,6 @@ Read a file and output it to the CLI
 # Examples
 cat file1.txt
 ```
-
-
 
 ### Command : env
 Print enviornrment varibales
