@@ -147,7 +147,7 @@ exit
 Connect to a remote machine using ssh 
 ```
 # Examples
-ssh lalindra@192.168.1.151
+ssh admin@192.168.1.151
 ```
 
 ## Command  Guide - Find information about the OS
@@ -212,10 +212,9 @@ cat /proc/cpuinfo | grep -i processor
 ```
 # To find the currently free memory look at the available column not the free column
 # Free : Memory is the amount of memory which is currently not used for anything. This number should be small, because memory which is not used is simply wasted.
-#Available : Memory is the amount of memory which is available for allocation to a new process or to existing processes.
+# Available : Memory is the amount of memory which is available for allocation to a new process or to existing processes.
 
 free -h                     # shows both memory and swap size and free memory
-
 cat /proc/meminfo
 ```
 
