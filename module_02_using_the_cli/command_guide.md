@@ -32,7 +32,7 @@ cat file1.txt
 ```
 
 ### Command : grep
-Filter text using patters/regular expressions
+Filter text using patterns/regular expressions
 ```
 # Examples
 grep root /etc/passwd
@@ -43,7 +43,7 @@ cat /etc/passwd | grep ftp -B5              # show 5 lines before the match
 ```
 
 ### Command : env
-Print enviornrment varibales
+Print enviornrment variables
 ```
 # Examples
 env
