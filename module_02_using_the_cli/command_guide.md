@@ -49,35 +49,13 @@ Print enviornrment variables
 env
 ```
 
-### Command : ls
-List files and directories
+### Command : alias 
+Create an alias 
 ```
 # Examples
-ls
-ls -l           # print list in long format 
-ls -a           # show hiddent files (or dot files)
-ls -la          # combining both l and a
-ls -lh          # show file size in human readable format   
-```
-
-### Command : cd
-Change directory
-```
-# Examples
-cd /etc                                     # change directory to /etc - Using absolute path
-cd /etc/sysconfig/network-scripts/          # Using the full absolue path
-cd projects                                 # change directory to projects - Using relative path
-cd ../                                      # go one directory level higher from current directory
-cd ../../                                   # go two levels higher from the current directory
-cd -                                        # go to the last working directory
-cd ~                                        # go to user home directory
-```
-
-### Command : pwd
-Prints current working directory
-```
-# Examples
-pwd
+alias ln="ls -lah"
+alias cc='cat /etc/resolv.conf | grep -i name'
+unalias ln
 ```
 
 ### Command : exit
