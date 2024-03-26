@@ -50,7 +50,7 @@ mkdir -p /tmp/mit/mst/devops
 ```
 
 ### Command : rm
-removes a directoty in the file system
+removes a directory in the file system
 ```
 # Examples
 rm file1.txt    

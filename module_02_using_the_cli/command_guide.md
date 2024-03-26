@@ -58,6 +58,14 @@ alias cc='cat /etc/resolv.conf | grep -i name'
 unalias ln
 ```
 
+### Command : history 
+Show the command history
+```
+# Examples
+history
+history 10
+```
+
 ### Command : exit
 Exit or logout from the shell
 ```
