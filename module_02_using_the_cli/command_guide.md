@@ -64,6 +64,16 @@ Show the command history
 # Examples
 history
 history 10
+
+# to execute a command in the history list you can use the ! mark
+!151
+
+# to set the timestamp for commands set one of the following in .bashrc or /etc/bashrc
+HISTTIMEFORMAT="%d/%m/%y %T "
+HISTTIMEFORMAT="%F %T "
+
+# to set the number of command to store in history set the following
+HISTSIZE=1000
 ```
 
 ### Command : exit
