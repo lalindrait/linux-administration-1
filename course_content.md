@@ -3,9 +3,9 @@
 1. Linux Introduction
 2. Using the CLI
 3. Linux file system
-4. Using Basic commands
-5. Using vi editor
-6. Linux users and groups
+4. Using vi editor
+5. Linux users and groups
+6. Managing Access to files
 7. Linux Processes
 8. Managing services
 9. Managing Storage

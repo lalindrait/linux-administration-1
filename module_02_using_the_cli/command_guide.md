@@ -126,13 +126,6 @@ uname -p            # processor type
 uname -i            # hardware platform type
 ```
 
-### Command : hostname 
-Print the hostname of the system 
-```
-# Examples
-hostname
-```
-
 
 ## Command  Guide - Find information about the Server
 
