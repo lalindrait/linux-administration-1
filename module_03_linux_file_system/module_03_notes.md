@@ -61,5 +61,5 @@ echo "Hello $(hostname)"
 ```
 
 
-**Note : The backslash (\) is an escape character in the Bash shell. It will protect the character immediately following it from expansion.**
+**Note : The backslash \ is an escape character in the Bash shell. It will protect the character immediately following it from expansion.**
 
