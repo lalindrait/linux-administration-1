@@ -34,7 +34,7 @@ chmod 666 file_mit.txt
 chmod 744 file_mit.txt
 ```
 
-### Command : chown
+### Command : umask
 Control what file permissions are set for newly created files
 ```
 # Examples
