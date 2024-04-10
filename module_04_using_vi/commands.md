@@ -37,6 +37,11 @@ x — Delete a single character.
 dd — Delete/Cut an entire line.
 Xdd — Delete X number of lines.
 Xyy — Yank X number of lines.
+p - Paste line before cursor
+P - Paste line after cursor
+
+u - Undo the last change
+U - Undo ll changes on the line
 
 r - Replace the current character
 R - Replace the character from current position
