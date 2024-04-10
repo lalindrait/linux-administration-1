@@ -10,6 +10,7 @@ ls -a           # show hiddent files (or dot files)
 ls -la          # combining both l and a
 ls -lh          # show file size in human readable format   
 ls -li          # shows i node numbers
+ls -s           # print the allocated size of each file, in blocks
 ```
 
 ### Command : cd
