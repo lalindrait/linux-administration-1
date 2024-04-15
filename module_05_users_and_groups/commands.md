@@ -82,12 +82,40 @@ groupmod -g 3000 devops             # change GID
 groupmod -n cloud devops            # change group name
 ```
 
+## Switching users
+
+### Command : su
+Switch user
+```
+# Examples
+su mit                              # switch user to mit in to a non-login shell
+su - mit                            # switch user to mit in to a login shell
+su - root                           # switch user to root to get admin access 
+su -                                # switch user to root to get admin access 
+
+# On some Linux distributions like Ubuntu, the root user account is disabled by default for security reasons. 
+# This means that no password is set for root, and you cannot use su to switch to root. 
+# You need to use sudo command to login as root in these systems.
+# sudo access to issue su - must be granted.
+
+sudo su -                       
+```
+
+### Command : sudo
+Run command as root
+```
+# Examples
+sudo cat /etc/shadow
+sudo poweroff 
+sudo su -                 
+```
+
 ## Misc Commands
 
 ### Task : check whether a shell is login or non-login
 ```
-# if -bash - login shell
-# if bash - non-login shell
+# if -bash --> login shell
+# if bash  --> non-login shell
 echo $0 
 ```
 
