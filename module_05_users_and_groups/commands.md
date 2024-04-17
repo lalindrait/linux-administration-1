@@ -74,7 +74,7 @@ Remove a group
 groupdel devops
 ```
 
-### Command : groupdel
+### Command : groupdmod
 Change group attributes
 ```
 # Examples
