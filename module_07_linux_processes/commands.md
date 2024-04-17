@@ -26,7 +26,7 @@ kill -SIGTERM 11853
 kill -9 11999
 kill -SIGKILL 12297
 ```
-
+module_07_linux_processes copy
 ### Command : killall
 Used to kill multiple processes based on their command name
 ```
