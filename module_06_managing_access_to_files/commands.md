@@ -5,8 +5,8 @@ Change user and/or group ownerships
 Note : In Linux only root can use chown for changing ownership of a file, but any user can change the group to another group he belongs to.
 ```
 # Examples
-chown mit file_mit.txt                  change only the user anf group statys the same
-chown mit:mit file_mit.txt              change both user and group
+chown mit file_mit.txt                  # change only the user anf group statys the same
+chown mit:mit file_mit.txt              # change both user and group
 ```
 
 ### Command :  chgrp
@@ -38,6 +38,7 @@ chmod 744 file_mit.txt
 Control what file permissions are set for newly created files
 ```
 # Examples
-umask
+umask                           # show the current umask
+umask -S                        # show the current umask in symbolic format
 umask 0022
 ```

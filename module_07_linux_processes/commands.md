@@ -1,4 +1,4 @@
-## Managing File Permissions
+## Working with processes
 
 ### Command : ps
 List processes
@@ -39,4 +39,25 @@ Used to kill multiple processes which matches selection criteria
 ```
 # Examples
 pkill -U mit                # kill all processes by user 
+```
+
+## Controlling jobs
+
+### Task : Running and identifying jobs
+```
+# Examples
+sleep 100 &                 # run the sleep command in background
+jobs                        # shows currently running jobs
+fg %1                       # brings a backgorund process to foreground
+CTRL+Z                      # send a ofregorund process to background and suspend
+bg %1                       # restart the suspended backgorund process
+```
+
+## Misc
+
+### Task : Logging out users forcefully
+```
+# Examples
+w                           # Show who is logged on and what they are doing
+pkill -t pts/1              # pkill the tty process
 ```
