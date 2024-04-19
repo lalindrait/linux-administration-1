@@ -8,8 +8,8 @@
 6. Managing Access to files
 7. Linux Processes
 8. Managing services
-9. Managing Storage
-10. Managing Networking
+9. Linux Networking
+10. Working with Storage
 11. Working with software packages
 
 # Linux - Task Modules
