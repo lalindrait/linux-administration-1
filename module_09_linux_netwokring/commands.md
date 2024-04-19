@@ -154,3 +154,50 @@ systemctl reload NetworkManager
 ```
 
 
+## Linux networking - Configure hostname and DNS
+
+### Task : Change the hostname
+```
+hostname
+
+hostnamectl --help
+hostnamectl set-hostname rocky85-lab-2
+cat /etc/hostname
+
+hostname status
+```
+
+### Task : Configure DNS
+```
+cat /etc/nsswitch.conf    
+cat /etc/hosts
+
+getent hosts rocky85-lab-1
+
+# Change DNS - using files
+#########################################
+# Disable NetworkManager Updating /etc/resolve.conf
+vi /etc/NetworkManager/NetworkManager.conf
+dns=none
+
+vi /etc/resolv.conf
+nameserver 4.2.2.2
+
+# Change DNS - Using nmcli
+#########################################
+# The default behavior of nmcli con mod ID ipv4.dns IP is to replace any previous DNS settings with the new IP list provided. 
+# A + or - symbol in front of the ipv4.dns argument adds or removes an individual entry
+nmcli con show enp0s8 | grep -i ipv4.dns
+cat /etc/sysconfig/network-scripts/ifcfg-enp0s8
+nmcli con mod enp0s8 ipv4.dns 8.8.8.8
+nmcli con mod enp0s8 +ipv4.dns 8.8.4.4              # add a secodary DNS
+
+# DHCP automatically rewrites the /etc/resolv.conf file as interfaces are started unless you specify PEERDNS=no
+# Disable PEERDNS - If PEERDNS is set to no then the file /etc/resolv.conf is not modified
+nmcli con mod enp0s8 ipv4.ignore-auto-dns yes
+
+# Checking DNS resolution
+host www.google.com
+nslookup www.google.com
+dig www.google.com
+```
