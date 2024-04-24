@@ -51,6 +51,7 @@ Change user attributes
 # Examples
 usermod -s /bin/sh mit
 usermod -aG sshd mit              # add user to a secodary group called ssh  
+gpasswd -d mit sshd               # remove the secondary group
 ```
 
 ### Command : cat /etc/group
