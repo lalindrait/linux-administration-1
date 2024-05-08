@@ -36,9 +36,15 @@ systemctl is-enabled chronyd
 systemctl disable chronyd
 systemctl enable chronyd
 
+# Change system run -level
 systemctl get-default
 systemctl --type=target
+systemctl list-units --type=target --all
 systemctl set-default multi-user.target
+
+# To switch to a different run-level - No reboot required
+systemctl isolate graphical.target
+systemctl isolate multi-user.target
 
 #Masking a service prevents an administrator from accidentally starting a service that conflicts with others
 systemctl mask chronyd

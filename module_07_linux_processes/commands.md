@@ -49,7 +49,7 @@ pkill -U mit                # kill all processes by user
 sleep 100 &                 # run the sleep command in background
 jobs                        # shows currently running jobs
 fg %1                       # brings a backgorund process to foreground
-CTRL+Z                      # send a ofregorund process to background and suspend
+CTRL+Z                      # send a foregorund process to background and suspend
 bg %1                       # restart the suspended backgorund process
 ```
 

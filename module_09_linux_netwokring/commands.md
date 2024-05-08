@@ -93,9 +93,9 @@ ip addr
 ### Task : Add a network interface to the system - using nmcli
 ```
 # Add anetwork connection - Use any one of the following
-nmcli con add con-name enp0s9 type ethernet ifname enp0s9-200 ipv4.method auto
-nmcli con add con-name enp0s9 type ethernet ifname enp0s9-200 ip4 192.168.56.200/24 gw4 192.168.56.1
-nmcli con add con-name enp0s9 type ethernet ifname enp0s9-200 ip6 2001:db8:0:1::c000:207/64 gw6 2001:db8:0:1::1 ip4 192.0.2.7/24 gw4 192.0.2.1
+nmcli con add con-name enp0s9-200 type ethernet ifname enp0s9 ipv4.method auto
+nmcli con add con-name enp0s9-200 type ethernet ifname enp0s9 ip4 192.168.56.200/24 gw4 192.168.56.1
+nmcli con add con-name enp0s9-200 type ethernet ifname enp0s9 ip6 2001:db8:0:1::c000:207/64 gw6 2001:db8:0:1::1 ip4 192.0.2.7/24 gw4 192.0.2.1
 
 # Bring up the connection
 nmcli con up enp0s9-200
@@ -187,6 +187,7 @@ nameserver 4.2.2.2
 #########################################
 # The default behavior of nmcli con mod ID ipv4.dns IP is to replace any previous DNS settings with the new IP list provided. 
 # A + or - symbol in front of the ipv4.dns argument adds or removes an individual entry
+
 nmcli con show enp0s8 | grep -i ipv4.dns
 cat /etc/sysconfig/network-scripts/ifcfg-enp0s8
 nmcli con mod enp0s8 ipv4.dns 8.8.8.8
