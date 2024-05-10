@@ -57,3 +57,26 @@ yum history undo 5
 
 yum repolist
 ```
+
+### Task : Using DNF
+```
+dnf list
+dnf list installed
+
+dnf info nginx
+dnf provides /usr/sbin/ping
+
+dnf search httpd
+
+dnf install httpd
+dnf upgrade httpd
+dnf remove httpd
+
+dnf grouplist
+dnf group info "Development Tools"
+dnf group install "Development Tools"
+
+dnf history
+
+dnf repolist
+```
