@@ -193,6 +193,10 @@ cat /etc/sysconfig/network-scripts/ifcfg-enp0s8
 nmcli con mod enp0s8 ipv4.dns 8.8.8.8
 nmcli con mod enp0s8 +ipv4.dns 8.8.4.4              # add a secodary DNS
 
+nmcli connection reload
+systemctl restart NetworkManager
+
+
 # DHCP automatically rewrites the /etc/resolv.conf file as interfaces are started unless you specify PEERDNS=no
 # Disable PEERDNS - If PEERDNS is set to no then the file /etc/resolv.conf is not modified
 nmcli con mod enp0s8 ipv4.ignore-auto-dns yes

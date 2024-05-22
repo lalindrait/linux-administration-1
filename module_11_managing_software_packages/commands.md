@@ -23,7 +23,7 @@ rpm -ql nfs-utils                   # list all files installed by the package
 curl -O https://nginx.org/packages/rhel/8/x86_64/RPMS/nginx-1.26.0-1.el8.ngx.x86_64.rpm
 
 # Install the package
-rpm -ivh nginx-1.24.0-1.el8.ngx.x86_64.rpm                  # i - install | v - verify | h - progress with has marks
+rpm -ivh nginx-1.24.0-1.el8.ngx.x86_64.rpm                  # i - install | v - verify | h - progress with hash marks
 
 # Upgrade the package
 rpm -Uvh nginx-1.26.0-1.el8.ngx.x86_64.rpm

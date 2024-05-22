@@ -67,7 +67,7 @@ File system type?  [ext2]? xfs
 Start? 1MB
 End? 4000MB
 
-### Create partition - Using the interactive mode 
+### Create partition - Using the command mode 
 (parted) mkpart primary xfs 4000MB 6000MB
 
 (parted) print
