@@ -14,7 +14,7 @@
 
 # Linux - Task Modules
 
-1. Identify system issues using log files
+1. Working with log files
 2. Troubleshooting file system issues
 3. Working with Linux services
 4. Working with cron jobs
