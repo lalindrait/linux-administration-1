@@ -24,6 +24,13 @@ cat /etc/passwd | grep -i Ftp               # i --> ignore case
 cat /etc/passwd | grep ftp -A5              # show 5 lines after the match    
 cat /etc/passwd | grep ftp -B5              # show 5 lines before the match 
 
+$ filter logs based on the timestamp
+cat /var/log/messages | grep 'May 29'                                   # filter logs for a whole day
+cat /var/log/messages | grep 'May 29 16'                                # filter logs for a specific hour
+cat /var/log/messages | grep 'May 29 16:31'                             # filter logs for a specific minute
+sed -n '/May 29 08:38:34/,/May 29 16:31:09/p' /var/log/messages         # print logs between the 2 timestamps
+
+
 # Sending log manually to syslog
 # The logger command can send messages to the rsyslog service
 # It is useful to test any change to the rsyslog service configuration
