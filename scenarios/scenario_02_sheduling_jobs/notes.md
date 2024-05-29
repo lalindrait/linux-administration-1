@@ -28,3 +28,11 @@ crontab -l
 crontab -e
 crontab -r
 ```
+
+## Other useful commands
+```
+# Chekcing and testing local email
+mail
+echo "This is a test" | mail -s "Test" root
+
+```

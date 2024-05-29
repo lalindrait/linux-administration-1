@@ -15,10 +15,9 @@
 # Linux - Task Modules
 
 1. Working with log files
-2. Troubleshooting file system issues
-3. Working with Linux services
-4. Working with cron jobs
-5. Monitoring a Linux System
-6. Troubleshooting performance issues in Linux
-7. Writing shell scripts
+2. Working with jobs
+3. Troubleshooting file system issues
+4. Monitoring a Linux System
+5. Troubleshooting performance issues in Linux
+6. Writing shell scripts
 
