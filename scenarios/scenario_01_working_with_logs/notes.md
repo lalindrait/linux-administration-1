@@ -54,3 +54,9 @@ dmesg
 dmesg -T                    # use human readable time format
 dmesg --follow
 ```
+
+## Other useful commands
+```
+# to empty a log file without deleting you can use the following command
+echo > /data/app.log
+```
