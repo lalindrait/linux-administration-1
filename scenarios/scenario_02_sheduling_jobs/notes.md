@@ -28,6 +28,9 @@ crontab -l
 crontab -e
 crontab -r
 
+#crontab files for users are stored in /var//spool/cron/
+cd /var//spool/cron/
+
 # crontab 
 
 * * * * * /root/savedate.sh                     # run the job every minute
