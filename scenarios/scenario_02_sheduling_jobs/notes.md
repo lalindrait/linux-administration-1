@@ -27,6 +27,19 @@ crontab -h
 crontab -l
 crontab -e
 crontab -r
+
+# crontab 
+
+* * * * * /root/savedate.sh                     # run the job every minute
+*/5 * * * * /root/savedate.sh                   # run the job every 5 mins
+
+# You can alos use a online crontab generator
+https://crontab-generator.org/
+
+#crontab file is in /etc - For system jobs
+cat /etc/crontab
+
+# 
 ```
 
 ## Other useful commands
@@ -34,5 +47,4 @@ crontab -r
 # Chekcing and testing local email
 mail
 echo "This is a test" | mail -s "Test" root
-
 ```

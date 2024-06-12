@@ -20,7 +20,7 @@ du -sh -- * | sort -rh              # sroted by size
 
 du -h                               # list space usage for all dirs recursively
 du -h . -d 1                        # print only the 1 level dirs in the hierarchy
-du -h . -d 1                        # print only the 1 & 2 level dirs in the hierarchy
+du -h . -d 2                        # print only the 1 & 2 level dirs in the hierarchy
 
 # to find files & dirs above a certain size
 find /var -size +10M -exec du -sh {} \;
