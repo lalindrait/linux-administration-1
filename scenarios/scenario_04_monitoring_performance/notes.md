@@ -1,5 +1,14 @@
 # Monitoring Performance
 
+### Command summary
+```
+CPU - uptime, vmstat, top, mpstat
+MEMORY - free, top
+DISK - iostat, sar
+NETWORK - ping, sar
+```
+
+
 ## Monitoring CPU
 ```
 # CPU Load averages - uptime
@@ -21,6 +30,9 @@ top -n 3 -b > /tmp/top.out          # redirect the output to a file
 shift + p   : Sort the processes by CPU usage
 shift + m   : Sort the processes by memory (%MEM) usage
 
+
+mpstat 1
+mpstat -P ALL 1                     # CPU wise stats
 
 ###################### How to intepret vmstat output ########################
 Procs
@@ -71,19 +83,26 @@ available	    An estimation of how much memory is available for starting new app
 
 ## Monitoring Disk IO
 ```
-If the command is not available use the folllowing command to install the rpm
-dnf install sysstat
+### If the command is not available use the folllowing command to install the rpm
+### dnf install sysstat
 
 iostat 1                           # repeat command every 1 second
 iostat -x 1                        # print extended output
 iostat -p sda 1                    # print for a specific device and paritions
+
+sar -d 1
 ```
 
 
 ## Monitoring Network
 ```
+### ping is generally used to check connectivity but the time field can be used to chec for latencies
+### time - RTT (Round Trip Time) for the ping request
 ping -c4 192.168.50.10
 ping -c4 4.2.2.2
 
+
+### if sar command is not availble install it using the following commans
+### dnf install sysstat
 sar -n DEV 1                        # monitor interface every 1 second
 ```
