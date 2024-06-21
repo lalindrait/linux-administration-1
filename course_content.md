@@ -18,6 +18,5 @@
 2. Working with jobs
 3. Troubleshooting file system issues
 4. Monitoring a Linux System
-5. Troubleshooting performance issues in Linux
-6. Writing shell scripts
+5. Writing shell scripts
 
