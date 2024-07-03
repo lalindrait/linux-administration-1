@@ -19,4 +19,5 @@
 3. Troubleshooting file system issues
 4. Monitoring a Linux System
 5. Writing shell scripts
+6. Working with security services - SELinux & Firewalld
 
