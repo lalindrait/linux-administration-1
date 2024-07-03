@@ -6,10 +6,13 @@
 ps axZ
 ls -lZ
 
+ls -Z /etc/passwd
+
+
 # get and set SELinux mode
 getenforce
 
-setenforce 0                # eet permissive mode
+setenforce 0                # set permissive mode
 setenforce Permissive
 
 setenforce 1                # set enforcing mode
@@ -20,6 +23,16 @@ vi /etc/selinux/config                 # change mode accordingly
 
 # manageing context rules
 semanage
+chcon 
+semanage fcontext -l
+
+# applying se linux policy to a file - httpd to read a file
+semanage fcontext -l /var/www/myapp/logs
+semanage fcontext -a httpd_log_t /var/www/myapp/logs
+restorecon -v /var/www/myapp/logs                                   # apply context changes
+
+# SELinux policy file locations
+cd /etc/selinux/targeted
 ```
 
 
